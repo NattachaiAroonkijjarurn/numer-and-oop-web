@@ -9,28 +9,7 @@ var xrbi = [];
 var xmbi = [];
 
 export default function Bisection(){
-    var xll = "" ;
-    fetch('bisection.json')
-        .then(function(response) {
-            return response.json()
-        })
-        .then(function(data) {
-            console.log(data)
-            appendData(data)
-        })
-        .catch(function(err) {
-            console.log("err = " + err);
-        })
-
-    function appendData(data) {
-        var mainContainer = document.getElementById("Hi") ;
-        for (var i = 0; i < data.lenth; i++) {
-            var div = document.createElement("div") ;
-            div.innerHTML = "Say :" + data.xl ;
-            mainContainer.appendChild(div) ;
-        }
-    }
-    
+ 
     function BisectionFuction(Xl,Xr,Function){
         const func = (x) =>{
             let expr = math.parse(Function);
@@ -81,33 +60,32 @@ export default function Bisection(){
     return(
         <div className="TitleBi"><h1 style={{color:'black',paddingLeft:'500px',paddingTop:'75px'}}>Bisection</h1>
             <div className="containerBi" style={{color:'black'}}>
-            <form>
-                <label>
-                    <h4 style={{paddingRight:'10px'}}>Xl :</h4>
-                </label> 
-                    <input id = "xl" placeholder="Xl" type='number' size='1' style={{fontSize:'20px'}} value=""></input>
-                <label>    
-                    <h4 style={{paddingTop:'20px',paddingRight:'10px'}}>Xr :</h4>
-                </label>
-                    <input id = "xr" placeholder="Xr" type ='number' size='1' style={{fontSize:'20px'}}></input>
-                <div className="labelfunc">
-                <label>    
-                    <h4 style={{paddingLeft:'100px',paddingRight:'10px'}}>Function :</h4>
-                </label>
-                    <input id = "Function" placeholder="Function" type = 'function' size='15' style={{fontSize:'20px'}}></input>
+                <form>
+                    <label>
+                        <h4 style={{paddingRight:'10px'}}>Xl :</h4>
+                    </label> 
+                        <input id = "xl" className="xl" placeholder="Xl" type='number' size='1' style={{fontSize:'20px'}}></input>
+                    <label>    
+                        <h4 style={{paddingTop:'20px',paddingRight:'10px'}}>Xr :</h4>
+                    </label>
+                        <input id = "xr" className="xr" placeholder="Xr" type ='number' size='1' style={{fontSize:'20px'}}></input>
+                    <div className="labelfunc">
+                    <label>    
+                        <h4 style={{paddingLeft:'100px',paddingRight:'10px'}}>Function :</h4>
+                    </label>
+                        <input id = "Function" className="function" placeholder="Function" type = 'function' size='15' style={{fontSize:'20px'}}></input>
+                    </div>
+                </form>
+                <div className="buttonbi">
+                    <button style={{color:'#fff'}} onClick={getValue}>Calculate</button>
                 </div>
-            </form>
-            <div className="buttonbi">
-                <button style={{color:'#fff'}} onClick={getValue}>Calculate</button>
-            </div>
             </div>
             <div id="ShowXM" className="ShowXM" style={{color: 'black',paddingLeft:'525px',paddingTop:'30px'}}></div>
             <div className="chartcontrainer">
-            <div id = "showchart" className = 'chart' style={{paddingLeft:'320px' , paddingTop:'30px'}}>
-                <ChartBI data = {{xm:xmbi, xl:xlbi , xr:xrbi}}/>
+                <div id = "showchart" className = 'chart' style={{paddingLeft:'320px' , paddingTop:'30px'}}>
+                    <ChartBI data = {{xm:xmbi, xl:xlbi , xr:xrbi}}/>
+                </div>
             </div>
-            </div>
-            <div id="Hi" style={{color:'#000'}}><script src="/bisectionFecth.js"></script></div>
         </div> 
     );
 }

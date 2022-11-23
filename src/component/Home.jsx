@@ -18,38 +18,38 @@ export default function Home() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="/Bisection" style={{textDecoration:'none',color:'#fff'}}>Bisection</a></td>
-                        <td><a href="/cramerrule" style={{textDecoration:'none',color:'#fff'}}>Cramer's Rule</a></td>
-                        <td><a href="/NewtonDivided" style={{textDecoration:'none',color:'#fff'}}>Newton Divided Difference</a></td>
-                        <td><a href="/linearregression" style={{textDecoration:'none',color:'#fff'}}>Linear Regression</a></td>
+                        <td><a href="/numerProject/Bisection" style={{textDecoration:'none',color:'#fff'}}>Bisection</a></td>
+                        <td><a href="/numerProject/cramerrule" style={{textDecoration:'none',color:'#fff'}}>Cramer's Rule</a></td>
+                        <td><a href="/numerProject/NewtonDivided" style={{textDecoration:'none',color:'#fff'}}>Newton Divided Difference</a></td>
+                        <td><a href="/numerProject/linearregression" style={{textDecoration:'none',color:'#fff'}}>Linear Regression</a></td>
                     </tr>
                     <tr>
-                        <td><a href="/Falseposition" style={{textDecoration:'none',color:'#fff'}}>False Position</a></td>
-                        <td><a href="/gausselimination" style={{textDecoration:'none',color:'#fff'}}>Gauss Elimination</a></td>
-                        <td><a href="/largrange" style={{textDecoration:'none',color:'#fff'}}>Lagrange</a></td>
-                        <td><a href="/polynomial" style={{textDecoration:'none',color:'#fff'}}>Polynomail Regression</a></td>
+                        <td><a href="/numerProject/Falseposition" style={{textDecoration:'none',color:'#fff'}}>False Position</a></td>
+                        <td><a href="/numerProject/gausselimination" style={{textDecoration:'none',color:'#fff'}}>Gauss Elimination</a></td>
+                        <td><a href="/numerProject/largrange" style={{textDecoration:'none',color:'#fff'}}>Lagrange</a></td>
+                        <td><a href="/numerProject/polynomial" style={{textDecoration:'none',color:'#fff'}}>Polynomail Regression</a></td>
                     </tr>
                     <tr>
-                        <td><a href="/OnePointiteration" style={{textDecoration:'none',color:'#fff'}}>One Point Iteratio</a></td>
-                        <td><a href="/gaussjordan" style={{textDecoration:'none',color:'#fff'}}>Gauss Jordan</a></td>
+                        <td><a href="/numerProject/OnePointiteration" style={{textDecoration:'none',color:'#fff'}}>One Point Iteratio</a></td>
+                        <td><a href="/numerProject/gaussjordan" style={{textDecoration:'none',color:'#fff'}}>Gauss Jordan</a></td>
                         <td></td>
-                        <td><a href="/MultipleLinear" style={{textDecoration:'none',color:'#fff'}}>Multiple Linear Regression</a></td>
+                        <td><a href="/numerProject/MultipleLinear" style={{textDecoration:'none',color:'#fff'}}>Multiple Linear Regression</a></td>
                     </tr>
                 <tr>
-                        <td><a href="/NewtonRaphson" style={{textDecoration:'none',color:'#fff'}}>Newton Raphson</a></td>
-                        <td><a href="/jacobi" style={{textDecoration:'none',color:'#fff'}}>Jacobi Iteration</a></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <tr>
-                        <td><a href="/Secant" style={{textDecoration:'none',color:'#fff'}}>Secant</a></td>
-                        <td><a href="/gaussseidel" style={{textDecoration:'none',color:'#fff'}}>Gauss Seidel</a></td>
+                        <td><a href="/numerProject/NewtonRaphson" style={{textDecoration:'none',color:'#fff'}}>Newton Raphson</a></td>
+                        <td><a href="/numerProject/jacobi" style={{textDecoration:'none',color:'#fff'}}>Jacobi Iteration</a></td>
                         <td></td>
                         <td></td>
                     </tr>
                 <tr>
+                        <td><a href="/numerProject/Secant" style={{textDecoration:'none',color:'#fff'}}>Secant</a></td>
+                        <td><a href="/numerProject/gaussseidel" style={{textDecoration:'none',color:'#fff'}}>Gauss Seidel</a></td>
                         <td></td>
-                        <td><a href="/conjugategradient" style={{textDecoration:'none',color:'#fff'}}>Conjugrate Gradient</a></td>
+                        <td></td>
+                    </tr>
+                <tr>
+                        <td></td>
+                        <td><a href="/numerProject/conjugategradient" style={{textDecoration:'none',color:'#fff'}}>Conjugrate Gradient</a></td>
                         <td></td>
                         <td></td>
                     </tr>
